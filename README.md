@@ -15,3 +15,5 @@ It will output the results into a .csv file, deliniated by "|".
   - An easy solution to this is to write the contents of the response into a file before continuing the loop (I may implement this later)
 - The only content, author_id, and mention_everyone is written to the file. If you want other features, you will need to change the loop at the bottom
   - I may add kwargs in the future so that any desired value can be passed without manually changing the code
+- If for some reason the code fails (perhaps due to an unexpected response error), all scraping progress is lost
+  - Again, only really a problem if you are scraping a large file. I may solve this in the future by handling unexpected responses and logging the last ID so the script can pick up where it left off
